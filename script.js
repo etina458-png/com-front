@@ -44,7 +44,7 @@ loginBtn.addEventListener("click", async () => {
   verifyingBox.classList.remove("hidden");
 
   try {
-    const response = await fetch("https://com-back-2gla.onrender.com/api/login", {
+    const response = await fetch("https://com-back-kb8z.onrender.com/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
